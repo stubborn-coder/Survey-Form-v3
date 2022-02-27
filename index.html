@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <h1 id="title">Sport's Registration</h1>
+    <p id="description">Join now!</p>
+    
+    <div class="contain pt-3">
+        <form action="">
+            <div class="form-floating m-3">
+                <input type="text" name="" id="name" class="form-control" placeholder="Name" required> 
+                <label id="name-label" for="name" class="form-control-sm">Name</label>
+            </div>
+    
+            <div class="form-floating m-3">
+                <input type="email" name="" id="email" class="form-control" placeholder="email" required> 
+                <label id="email-label" for="email" class="form-control-sm">Email</label>
+            </div>
+            
+            <div class="form-floating m-3">
+                <input type="number" name="age" id="age" class="form-control" placeholder="Age" min="0" max="100" required> 
+                <label for="age" class="form-control-sm">Age</label>
+            </div>
+            <div class="year-select">
+                <label for="dropdown" class="form-label">What year are you in?</label>
+                <select name="first" id="dropdown" class="form-select">
+                    <option value="" disabel selected>Select your option</option>
+                    <option value="1">First year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                    <option value="4">Fourth Year</option>
+                </select>
+            </div>
+            <p class="form-label">Select your preferred day.</p>
+            <div id="day-select" class="btn-group form-control border-0" role="group">
+                
+                <input type="radio" name="day" id="friday" class="btn-check">
+                <label for="friday" class="btn btn-outline-primary">Friday</label>
+    
+                <input type="radio" name="day" id="saturday" class="btn-check">
+                <label for="saturday" class="btn btn-outline-primary">Saturday</label>
+    
+                <input type="radio" name="day" id="sunday" class="btn-check">
+                <label for="sunday" class="btn btn-outline-primary">Sunday</label>
+            </div>
+            <p class="form-label">Select your preferred sport(s)</p>
+            <div id="select-sport" class="btn-group form-control border-0" role="group">
+                
+                <input type="checkbox" name="day" id="cricket" class="btn-check">
+                <label for="cricket" class="btn btn-outline-primary">Cricket</label>
+    
+                <input type="checkbox" name="day" id="basketball" class="btn-check">
+                <label for="basketball" class="btn btn-outline-primary">Basketball</label>
+    
+                <input type="checkbox" name="day" id="football" class="btn-check">
+                <label for="football" class="btn btn-outline-primary">Football</label>
+            </div>
+    
+            <div class="mb-3">
+                <label for="comment" class="form-label">Any suggestions?</label>
+                <textarea class="form-control" id="comment" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success form-control mb-3">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
