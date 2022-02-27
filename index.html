@@ -12,7 +12,7 @@
     <p id="description">Join now!</p>
     
     <div class="contain pt-3">
-        <form action="">
+        <form id="survey-form"action="">
             <div class="form-floating m-3">
                 <input type="text" name="" id="name" class="form-control" placeholder="Name" required> 
                 <label id="name-label" for="name" class="form-control-sm">Name</label>
@@ -24,8 +24,8 @@
             </div>
             
             <div class="form-floating m-3">
-                <input type="number" name="age" id="age" class="form-control" placeholder="Age" min="0" max="100" required> 
-                <label for="age" class="form-control-sm">Age</label>
+                <input type="number" name="age" id="number" class="form-control" placeholder="Age" min="0" max="100" required> 
+                <label id="number-label" for="number" class="form-control-sm">Age</label>
             </div>
             <div class="year-select">
                 <label for="dropdown" class="form-label">What year are you in?</label>
@@ -40,25 +40,25 @@
             <p class="form-label">Select your preferred day.</p>
             <div id="day-select" class="btn-group form-control border-0" role="group">
                 
-                <input type="radio" name="day" id="friday" class="btn-check">
+                <input value="fri" type="radio" name="day" id="friday" class="btn-check">
                 <label for="friday" class="btn btn-outline-primary">Friday</label>
     
-                <input type="radio" name="day" id="saturday" class="btn-check">
+                <input value="sat" type="radio" name="day" id="saturday" class="btn-check">
                 <label for="saturday" class="btn btn-outline-primary">Saturday</label>
     
-                <input type="radio" name="day" id="sunday" class="btn-check">
+                <input value="sun" type="radio" name="day" id="sunday" class="btn-check">
                 <label for="sunday" class="btn btn-outline-primary">Sunday</label>
             </div>
             <p class="form-label">Select your preferred sport(s)</p>
             <div id="select-sport" class="btn-group form-control border-0" role="group">
                 
-                <input type="checkbox" name="day" id="cricket" class="btn-check">
+                <input value="cricket" type="checkbox" name="day" id="cricket" class="btn-check">
                 <label for="cricket" class="btn btn-outline-primary">Cricket</label>
     
-                <input type="checkbox" name="day" id="basketball" class="btn-check">
+                <input value="basketball" type="checkbox" name="day" id="basketball" class="btn-check">
                 <label for="basketball" class="btn btn-outline-primary">Basketball</label>
     
-                <input type="checkbox" name="day" id="football" class="btn-check">
+                <input value="football" type="checkbox" name="day" id="football" class="btn-check">
                 <label for="football" class="btn btn-outline-primary">Football</label>
             </div>
     
@@ -67,7 +67,7 @@
                 <textarea class="form-control" id="comment" rows="3"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-success form-control mb-3">Submit</button>
+            <button id="submit" type="submit" class="btn btn-success form-control mb-3">Submit</button>
         </form>
     </div>
 
